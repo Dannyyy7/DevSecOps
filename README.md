@@ -54,11 +54,13 @@ The pipeline automates application build, security analysis, Docker image creati
                       │
                       ▼
                  Application
+```
 ────────────────────────────────────────────
 
 
 ## 📂 Project Structure
 
+```text
 DevSecOps/
 │
 ├── Jenkinsfile
@@ -75,12 +77,11 @@ DevSecOps/
 │   └── application.yaml
 │
 └── README.md
-
+```
 ────────────────────────────────────────────
 
-
-
 ## 🔄 CI/CD Pipeline Flow
+```text
 
 Stage 1  
 Checkout Source Code
@@ -105,10 +106,11 @@ Deploy using ArgoCD
 
 Stage 8  
 Kubernetes Application Deployment
-
+```
 ────────────────────────────────────────────
 
 ## 🚀 Deployment Workflow
+```text
 
 1. Developer pushes code to GitHub.
 2. Jenkins pipeline is triggered.
@@ -120,10 +122,11 @@ Kubernetes Application Deployment
 8. ArgoCD detects the deployment change.
 9. ArgoCD synchronizes the Kubernetes application.
 10. Updated application is deployed to the Kubernetes cluster.
-
+```
 ────────────────────────────────────────────
 
 ## ☸️ Kubernetes
+```text
 
 Kubernetes is used to deploy and manage the containerized application.
 
@@ -142,8 +145,10 @@ Useful commands:
 kubectl get pods
 kubectl get services
 kubectl get deployments
+```
 ────────────────────────────────────────────
 ## ⎈ Helm
+```text
 
 Helm is used to package and manage Kubernetes resources.
 
@@ -154,10 +159,11 @@ helm install netflix ./Helm/netflix
 Upgrade:
 
 helm upgrade netflix ./Helm/netflix
-
+```
 ────────────────────────────────────────────
 
 ## 🔁 GitOps with ArgoCD
+```text
 
 ArgoCD implements GitOps-based continuous delivery.
 
@@ -172,9 +178,10 @@ Kubernetes
    │
    ▼
 Application
-
+```
 ────────────────────────────────────────────
 ## 🔐 DevSecOps
+```text
 
 Security is integrated into the CI/CD pipeline using:
 
@@ -194,10 +201,11 @@ Example:
 
 trivy fs .
 trivy image <image-name>
-
+```
 ────────────────────────────────────────────
 
 ## 📊 Monitoring
+```text
 
 Prometheus and Grafana are used to monitor the Kubernetes environment.
 
@@ -206,10 +214,11 @@ Prometheus and Grafana are used to monitor the Kubernetes environment.
 • Node metrics  
 • Cluster performance  
 • Application metrics  
-
+```
 ────────────────────────────────────────────
 
 ## 📦 Key Features
+```text
 
 • Automated CI/CD using Jenkins  
 • Docker containerization  
@@ -219,10 +228,11 @@ Prometheus and Grafana are used to monitor the Kubernetes environment.
 • GitOps using ArgoCD  
 • AWS cloud deployment  
 • Automated application synchronization  
-
+```
 ────────────────────────────────────────────
 
 ## 💡 Challenges Faced
+```text
 
 During this project I worked through practical DevOps and DevSecOps challenges including:
 
@@ -235,10 +245,11 @@ During this project I worked through practical DevOps and DevSecOps challenges i
 • Kubernetes networking  
 
 These challenges helped strengthen my understanding of CI/CD, container orchestration, DevSecOps, and GitOps.
-
+```
 ────────────────────────────────────────────
 
 ## 🔮 Future Improvements
+```text
 
 • Deploy on Amazon EKS  
 • Terraform-based infrastructure  
@@ -247,17 +258,20 @@ These challenges helped strengthen my understanding of CI/CD, container orchestr
 • Advanced security policies  
 • AWS Secrets Manager integration  
 • Automated rollback  
-
+```
 ────────────────────────────────────────────
 
 ## 👨‍💻 Author
+```text
 
 Subham Dani
 
 GitHub:
 
 https://github.com/Dannyyy7
-
+```
 ────────────────────────────────────────────
+```text
 
 ⭐ If you found this project useful, consider giving it a Star!
+```
