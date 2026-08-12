@@ -153,11 +153,9 @@ kubectl get deployments
 Helm is used to package and manage Kubernetes resources.
 
 Install:
-
-```bash
 helm install netflix ./Helm/netflix
-Upgrade:
 
+Upgrade:
 helm upgrade netflix ./Helm/netflix
 ```
 ────────────────────────────────────────────
@@ -167,7 +165,6 @@ helm upgrade netflix ./Helm/netflix
 
 ArgoCD implements GitOps-based continuous delivery.
 
-```text
 GitHub
    │
    ▼
